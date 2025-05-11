@@ -9,7 +9,6 @@ export async function main(id: any, expected: any) {
     });
 
     const data = await response.json();
-    console.log(
-        `calling with ${id}, result is ${data.total}, and expected is ${expected}`,
-    );
+
+    return data.total;
 }
